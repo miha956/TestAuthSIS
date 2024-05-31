@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		A9DB13D92C0A10990036AEA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB13D82C0A10990036AEA6 /* AppDelegate.swift */; };
 		A9DB13DB2C0A10990036AEA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB13DA2C0A10990036AEA6 /* SceneDelegate.swift */; };
-		A9DB13DD2C0A10990036AEA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB13DC2C0A10990036AEA6 /* ViewController.swift */; };
-		A9DB13E02C0A10990036AEA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DB13DE2C0A10990036AEA6 /* Main.storyboard */; };
+		A9DB13DD2C0A10990036AEA6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB13DC2C0A10990036AEA6 /* MainViewController.swift */; };
 		A9DB13E32C0A10990036AEA6 /* TestAuthSIS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A9DB13E12C0A10990036AEA6 /* TestAuthSIS.xcdatamodeld */; };
 		A9DB13E52C0A109A0036AEA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9DB13E42C0A109A0036AEA6 /* Assets.xcassets */; };
 		A9DB13E82C0A109A0036AEA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DB13E62C0A109A0036AEA6 /* LaunchScreen.storyboard */; };
@@ -20,8 +19,7 @@
 		A9DB13D52C0A10990036AEA6 /* TestAuthSIS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAuthSIS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DB13D82C0A10990036AEA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9DB13DA2C0A10990036AEA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A9DB13DC2C0A10990036AEA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A9DB13DF2C0A10990036AEA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9DB13DC2C0A10990036AEA6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A9DB13E22C0A10990036AEA6 /* TestAuthSIS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestAuthSIS.xcdatamodel; sourceTree = "<group>"; };
 		A9DB13E42C0A109A0036AEA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9DB13E72C0A109A0036AEA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,14 +58,21 @@
 			children = (
 				A9DB13D82C0A10990036AEA6 /* AppDelegate.swift */,
 				A9DB13DA2C0A10990036AEA6 /* SceneDelegate.swift */,
-				A9DB13DC2C0A10990036AEA6 /* ViewController.swift */,
-				A9DB13DE2C0A10990036AEA6 /* Main.storyboard */,
+				A9DB13EF2C0A33C00036AEA6 /* MainScreenModule */,
 				A9DB13E42C0A109A0036AEA6 /* Assets.xcassets */,
 				A9DB13E62C0A109A0036AEA6 /* LaunchScreen.storyboard */,
 				A9DB13E92C0A109A0036AEA6 /* Info.plist */,
 				A9DB13E12C0A10990036AEA6 /* TestAuthSIS.xcdatamodeld */,
 			);
 			path = TestAuthSIS;
+			sourceTree = "<group>";
+		};
+		A9DB13EF2C0A33C00036AEA6 /* MainScreenModule */ = {
+			isa = PBXGroup;
+			children = (
+				A9DB13DC2C0A10990036AEA6 /* MainViewController.swift */,
+			);
+			path = MainScreenModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +135,6 @@
 			files = (
 				A9DB13E82C0A109A0036AEA6 /* LaunchScreen.storyboard in Resources */,
 				A9DB13E52C0A109A0036AEA6 /* Assets.xcassets in Resources */,
-				A9DB13E02C0A10990036AEA6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9DB13DD2C0A10990036AEA6 /* ViewController.swift in Sources */,
+				A9DB13DD2C0A10990036AEA6 /* MainViewController.swift in Sources */,
 				A9DB13E32C0A10990036AEA6 /* TestAuthSIS.xcdatamodeld in Sources */,
 				A9DB13D92C0A10990036AEA6 /* AppDelegate.swift in Sources */,
 				A9DB13DB2C0A10990036AEA6 /* SceneDelegate.swift in Sources */,
@@ -151,14 +155,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A9DB13DE2C0A10990036AEA6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A9DB13DF2C0A10990036AEA6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A9DB13E62C0A109A0036AEA6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,6 +290,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GVZ5VP5Q9P;
@@ -301,9 +298,9 @@
 				INFOPLIST_FILE = TestAuthSIS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,9 +308,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = m.vashkevich.TestAuthSIS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,6 +323,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GVZ5VP5Q9P;
@@ -329,9 +331,9 @@
 				INFOPLIST_FILE = TestAuthSIS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,9 +341,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = m.vashkevich.TestAuthSIS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
