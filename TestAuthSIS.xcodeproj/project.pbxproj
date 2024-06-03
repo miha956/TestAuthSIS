@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A926FC862C0A75A900E6D996 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A926FC852C0A75A900E6D996 /* UIView.swift */; };
+		A926FC8E2C0DB79200E6D996 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A926FC8D2C0DB79200E6D996 /* AuthViewController.swift */; };
+		A926FC902C0DB8EF00E6D996 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A926FC8F2C0DB8EF00E6D996 /* AuthViewModel.swift */; };
+		A926FC922C0DD3BB00E6D996 /* AuthScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A926FC912C0DD3BB00E6D996 /* AuthScreenModel.swift */; };
+		A926FC942C0DD87900E6D996 /* LayoutViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A926FC932C0DD87900E6D996 /* LayoutViews.swift */; };
+		A926FC972C0DFE8D00E6D996 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A926FC962C0DFE8D00E6D996 /* VerificationViewController.swift */; };
 		A9DB13D92C0A10990036AEA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB13D82C0A10990036AEA6 /* AppDelegate.swift */; };
 		A9DB13DB2C0A10990036AEA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB13DA2C0A10990036AEA6 /* SceneDelegate.swift */; };
 		A9DB13DD2C0A10990036AEA6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB13DC2C0A10990036AEA6 /* MainViewController.swift */; };
 		A9DB13E32C0A10990036AEA6 /* TestAuthSIS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A9DB13E12C0A10990036AEA6 /* TestAuthSIS.xcdatamodeld */; };
 		A9DB13E52C0A109A0036AEA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9DB13E42C0A109A0036AEA6 /* Assets.xcassets */; };
 		A9DB13E82C0A109A0036AEA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DB13E62C0A109A0036AEA6 /* LaunchScreen.storyboard */; };
+		A9DB13F22C0A40120036AEA6 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB13F12C0A40120036AEA6 /* MainViewModel.swift */; };
+		A9DB13F42C0A429F0036AEA6 /* MainScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB13F32C0A429F0036AEA6 /* MainScreenModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A926FC852C0A75A900E6D996 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		A926FC8D2C0DB79200E6D996 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		A926FC8F2C0DB8EF00E6D996 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		A926FC912C0DD3BB00E6D996 /* AuthScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenModel.swift; sourceTree = "<group>"; };
+		A926FC932C0DD87900E6D996 /* LayoutViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutViews.swift; sourceTree = "<group>"; };
+		A926FC962C0DFE8D00E6D996 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
 		A9DB13D52C0A10990036AEA6 /* TestAuthSIS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAuthSIS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DB13D82C0A10990036AEA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9DB13DA2C0A10990036AEA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +38,8 @@
 		A9DB13E42C0A109A0036AEA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9DB13E72C0A109A0036AEA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9DB13E92C0A109A0036AEA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9DB13F12C0A40120036AEA6 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		A9DB13F32C0A429F0036AEA6 /* MainScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +53,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A926FC832C0A758900E6D996 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A9DB13D82C0A10990036AEA6 /* AppDelegate.swift */,
+				A9DB13DA2C0A10990036AEA6 /* SceneDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A926FC842C0A759900E6D996 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A9DB13F02C0A37520036AEA6 /* Extentions */,
+				A926FC932C0DD87900E6D996 /* LayoutViews.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A926FC8B2C0DB75000E6D996 /* AuthScreenModule */ = {
+			isa = PBXGroup;
+			children = (
+				A926FC8D2C0DB79200E6D996 /* AuthViewController.swift */,
+				A926FC8F2C0DB8EF00E6D996 /* AuthViewModel.swift */,
+				A926FC912C0DD3BB00E6D996 /* AuthScreenModel.swift */,
+			);
+			path = AuthScreenModule;
+			sourceTree = "<group>";
+		};
+		A926FC952C0DFDE600E6D996 /* VerificationScreenModule */ = {
+			isa = PBXGroup;
+			children = (
+				A926FC962C0DFE8D00E6D996 /* VerificationViewController.swift */,
+			);
+			path = VerificationScreenModule;
+			sourceTree = "<group>";
+		};
 		A9DB13CC2C0A10990036AEA6 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +108,11 @@
 		A9DB13D72C0A10990036AEA6 /* TestAuthSIS */ = {
 			isa = PBXGroup;
 			children = (
-				A9DB13D82C0A10990036AEA6 /* AppDelegate.swift */,
-				A9DB13DA2C0A10990036AEA6 /* SceneDelegate.swift */,
+				A926FC832C0A758900E6D996 /* Common */,
+				A926FC842C0A759900E6D996 /* Helpers */,
 				A9DB13EF2C0A33C00036AEA6 /* MainScreenModule */,
+				A926FC8B2C0DB75000E6D996 /* AuthScreenModule */,
+				A926FC952C0DFDE600E6D996 /* VerificationScreenModule */,
 				A9DB13E42C0A109A0036AEA6 /* Assets.xcassets */,
 				A9DB13E62C0A109A0036AEA6 /* LaunchScreen.storyboard */,
 				A9DB13E92C0A109A0036AEA6 /* Info.plist */,
@@ -71,8 +125,18 @@
 			isa = PBXGroup;
 			children = (
 				A9DB13DC2C0A10990036AEA6 /* MainViewController.swift */,
+				A9DB13F12C0A40120036AEA6 /* MainViewModel.swift */,
+				A9DB13F32C0A429F0036AEA6 /* MainScreenModel.swift */,
 			);
 			path = MainScreenModule;
+			sourceTree = "<group>";
+		};
+		A9DB13F02C0A37520036AEA6 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				A926FC852C0A75A900E6D996 /* UIView.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,10 +209,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9DB13F22C0A40120036AEA6 /* MainViewModel.swift in Sources */,
 				A9DB13DD2C0A10990036AEA6 /* MainViewController.swift in Sources */,
+				A9DB13F42C0A429F0036AEA6 /* MainScreenModel.swift in Sources */,
+				A926FC942C0DD87900E6D996 /* LayoutViews.swift in Sources */,
+				A926FC862C0A75A900E6D996 /* UIView.swift in Sources */,
+				A926FC8E2C0DB79200E6D996 /* AuthViewController.swift in Sources */,
+				A926FC972C0DFE8D00E6D996 /* VerificationViewController.swift in Sources */,
 				A9DB13E32C0A10990036AEA6 /* TestAuthSIS.xcdatamodeld in Sources */,
 				A9DB13D92C0A10990036AEA6 /* AppDelegate.swift in Sources */,
 				A9DB13DB2C0A10990036AEA6 /* SceneDelegate.swift in Sources */,
+				A926FC902C0DB8EF00E6D996 /* AuthViewModel.swift in Sources */,
+				A926FC922C0DD3BB00E6D996 /* AuthScreenModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
