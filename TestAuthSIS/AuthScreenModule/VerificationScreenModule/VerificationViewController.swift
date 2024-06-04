@@ -13,6 +13,8 @@ class VerificationViewController: UIViewController {
     
     private var viewModel: VerificationViewModelProtocol
     private var code: [Int] = []
+    private var timer: Timer?
+    private var timeInterval: TimeInterval = 300
     
     //MARK: SubViews
     private let verificationTitleLabel: UILabel = {
@@ -37,7 +39,7 @@ class VerificationViewController: UIViewController {
     private let timerLabel: UILabel = {
         let label = UILabel()
         label.textColor = .appWhite
-        label.text = "0:00"
+        label.text = "5:00"
         return label
     }()
     private let resendSmsStackView: UIStackView = {
@@ -59,7 +61,7 @@ class VerificationViewController: UIViewController {
         button.addTarget(self, action: #selector(confirmCode), for: .touchUpInside)
         return button
     }()
-    private let didNotReceiveCodeButton: UIButton = {
+    private lazy var didNotReceiveCodeButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitleColor(.appWhite, for: .normal)
         button.addTarget(self, action: #selector(didNotReceived), for: .touchUpInside)
@@ -72,6 +74,7 @@ class VerificationViewController: UIViewController {
         super.viewDidLoad()
         setupView()
         configView()
+        startTimer()
     }
     
     init(viewModel: VerificationViewModelProtocol) {
@@ -87,6 +90,11 @@ class VerificationViewController: UIViewController {
         super.viewDidLayoutSubviews()
         confirmButton.layer.cornerRadius = confirmButton.frame.height/2
         confirmButton.clipsToBounds = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        stopTimer()
     }
     
     //MARK: Methods
@@ -174,4 +182,32 @@ extension VerificationViewController: CodeVerifyViewDelegate {
     }
 }
 
+    //MARK: Timer
+
+extension VerificationViewController {
+    
+    private func startTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+    }
+    
+    private func stopTimer() {
+        timer?.invalidate()
+        timer = nil
+    }
+    
+    @objc private func updateTimer() {
+        if timeInterval > 0 {
+            timeInterval -= 1
+            updateTimeLabel()
+        } else {
+            stopTimer()
+        }
+    }
+    
+    private func updateTimeLabel() {
+        let minutes = Int(timeInterval) / 60
+        let seconds = Int(timeInterval) % 60
+        timerLabel.text = String(format: "%02d:%02d", minutes, seconds)
+    }
+}
 

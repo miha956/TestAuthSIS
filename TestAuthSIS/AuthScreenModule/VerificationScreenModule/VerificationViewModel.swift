@@ -23,6 +23,7 @@ final class VerificationViewModel: VerificationViewModelProtocol {
     }
     
     
+    
     func getViewData() -> (verificationTitle: String, description: String, resendSmsDescription: String, didNotReceiveCodeButtonTitle: String, title: String) {
         
         var title = ""
